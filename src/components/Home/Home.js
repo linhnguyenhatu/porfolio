@@ -22,7 +22,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> LINH NGUYEN. YOU CAN CALL ME JAMES</strong>
+                <strong className="main-name"> JAMES NGUYEN</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -32,7 +32,7 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={"https://cdn.discordapp.com/attachments/1091384978006355970/1303834757343346738/Thiet_ke_chua_co_ten__1_-removebg-preview.png?ex=672d323e&is=672be0be&hm=697654b4f8a0c05652596a5426e28ca98c5d957c34ba0d009f05adf5db9f098f&"}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
