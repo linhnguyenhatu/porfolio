@@ -22,20 +22,20 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              About <strong className="purple">Me</strong>
             </h1>
             <Aboutcard />
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{ paddingTop: "70px", paddingBottom: "20px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img src={"https://cdn.discordapp.com/attachments/959644048841375787/1303860553432961064/Thiet_ke_chua_co_ten__2_-removebg-preview.png?ex=672d4a44&is=672bf8c4&hm=b9a8142d66d5849a1a7b6326b078307d72f2deda8fc8f6f9631332bcf216db47&"} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+         <strong className="purple">Skillset </strong>
         </h1>
 
         <Techstack />
