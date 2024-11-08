@@ -4,7 +4,7 @@ import Particle from "../Particle";
 import Github from "./Github";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
+import laptopImg from "../../Assets/Thiết_kế_chưa_có_tên__2_-removebg-preview.png";
 import Toolstack from "./Toolstack";
 
 function About() {
@@ -31,7 +31,7 @@ function About() {
             style={{ paddingTop: "70px", paddingBottom: "20px" }}
             className="about-img"
           >
-            <img src={"https://cdn.discordapp.com/attachments/959644048841375787/1303860553432961064/Thiet_ke_chua_co_ten__2_-removebg-preview.png?ex=672d4a44&is=672bf8c4&hm=b9a8142d66d5849a1a7b6326b078307d72f2deda8fc8f6f9631332bcf216db47&"} alt="about" className="img-fluid" />
+            <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
         <h1 className="project-heading">
