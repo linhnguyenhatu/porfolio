@@ -47,7 +47,7 @@ function Projects() {
               imgPath={editor}
               isBlog={false}
               title="Facebook Stock Prediction"
-              description="Predict facebook stock price using a dataset from 2012 to 2021. (In Progre)"
+              description="Predict facebook stock price using a dataset from 2012 to 2021."
               ghLink="https://github.com/linhnguyenhatu/Facebook-Stock-Prediction"    
             />
           </Col>
