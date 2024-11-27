@@ -8,6 +8,9 @@ import editor from "../../Assets/Projects/facebook.png";
 import chatify from "../../Assets/Projects/chartify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import medicalchatbot from "../../Assets/Projects/medicalchatbot.webp";
+import hatespeech from "../../Assets/Projects/hatespeech.jpg"
+import movierating from "../../Assets/Projects/movieratings.webp"
 
 function Projects() {
   return (
@@ -15,12 +18,23 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My Recent <strong className="purple">Projects </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are some small projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={medicalchatbot}
+              isBlog={false}
+              title="Medical Chatbot"
+              description="This is an Chatbot AI that is specifically for medical problems. It utilizes Decoder-only Transformer model with a standard Embedding technique. I use the PyTorch framework and other libraries for ML and processing the data. Because it is only a demo, the vocabulary size is only 30000 words and the whole dataset only has 200000 samples."
+              ghLink="https://github.com/linhnguyenhatu/Medical-Chatbot-Demo"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
@@ -34,6 +48,39 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={hatespeech}
+              isBlog={false}
+              title="Hate Speech Detection"
+              description="An AI model that can detect hate speeches and posts using basic Word2Vec technique and Long-Short Term Memory model to process Natural Language inputs. It can classify posts into three categories: hate, offensive, and neither"
+              ghLink="https://github.com/linhnguyenhatu/Hate-Speech-Detection"    
+            />
+          </Col>
+
+        </Row>
+
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={false}
+              title="Facebook Stock Prediction"
+              description="An AI model that can predict facebook stock price using a dataset from 2012 to 2021."
+              ghLink="https://github.com/linhnguyenhatu/Facebook-Stock-Prediction"    
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={movierating}
+              isBlog={false}
+              title="Movie Ratings Classification"
+              description="A small movie-reviews classification into positive and negative reviews using Word2Vec and LSTM"
+              ghLink="https://github.com/linhnguyenhatu/Movie-Reviews-Word2vec-LSTM-"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
               title="AI planner"
@@ -42,17 +89,9 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Facebook Stock Prediction"
-              description="Predict facebook stock price using a dataset from 2012 to 2021."
-              ghLink="https://github.com/linhnguyenhatu/Facebook-Stock-Prediction"    
-            />
-          </Col>
-
         </Row>
+
+
       </Container>
     </Container>
   );
