@@ -11,7 +11,8 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 import medicalchatbot from "../../Assets/Projects/medicalchatbot.webp";
 import hatespeech from "../../Assets/Projects/hatespeech.jpg"
 import movierating from "../../Assets/Projects/movieratings.webp"
-
+import heart from "../../Assets/Projects/heart.jpg"
+import transport from "../../Assets/Projects/transportation.jpg"
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,7 +24,30 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are some small projects I've worked on recently.
         </p>
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={heart}
+              isBlog={false}
+              title="Heart Disease Prediction"
+              description="AI models on a dataset of 56,000 patients' medical records to explore patterns related to cardiovascular disease diagnosis. I developed several machine learning models from scratch, including Logistic Regression, Decision Tree, Random Forest, and AdaBoost, using the Numpy package. The models achieved an impressive out-of-sample accuracy of over 93%"
+              ghLink="https://github.com/linhnguyenhatu/Heart-Disease-Prediction"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={transport}
+              isBlog={false}
+              title="RAG and React Agent for transportation"
+              description="A RAG system with a ReAct Agent using Langchain framework and leveraging GenAI models such as DeepSeek-R1, Llama 3.1, and Phi4 to enhance information retrieval and contextual accuracy within transportation field."
+              ghLink="https://github.com/linhnguyenhatu/RAG-and-ReAct-Agent"
+            />
+          </Col>
+
+       
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -35,6 +59,10 @@ function Projects() {
             />
           </Col>
 
+          </Row>
+
+
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
@@ -56,7 +84,6 @@ function Projects() {
             />
           </Col>
 
-        </Row>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -69,6 +96,7 @@ function Projects() {
             />
           </Col>
 
+          </Row>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={movierating}
