@@ -59,10 +59,10 @@ function Projects() {
             />
           </Col>
 
-          </Row>
+        </Row>
 
 
-          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={chatify}
@@ -94,9 +94,9 @@ function Projects() {
               ghLink="https://github.com/linhnguyenhatu/Facebook-Stock-Prediction"    
             />
           </Col>
-          </Row>
+        </Row>
 
-          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={movierating}
